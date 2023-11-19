@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: " noeliap101.github.io Blog"
+  title: " Noelia Senior Project Blog"
   navbar:
     right:
       - about.qmd
