@@ -1,12 +1,249 @@
 ---
 title: "Welcome To My Blog! First"
+#format:
+ # html:
+  #  code-fold: true
 author: "Noelia Paz"
-date: "2023-11"
+date: "2023"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+## My Informational First Blog Post ##
 
-![](thumbnail.jpg)
+![](features_of_scala.png)
 
-Hello hdkbfk `image`, KJBaskcbaks.vjvjhb
+Why would you want to learn `Scala`?
+
+Why don't you just continue with the same languages you've been using for all your programming?
+
+The goal of this is to encourage you to consider learning the Scala Programming language
+
+### Why Scala For Me ###
+As I have been researching on why Scala would be a beneficial tool for you to use, I have learned that larger companies use this as they have more benefits than others.
+
+I went to a Disney informational session in my third year in college to learn about what they are looking for for programming candidates. 
+The speaker said that if we want to stand out among other candidates, Scala is the perfect lanaguge to learn. He did say that there is a huge learning curve.   
+
+
+### Companies That Use Scala and Examples of their projects with Pictures ###
+Scala is used a lot by companies involved with Big Data (because they use Spark).
+
+
+~`Apple`
+Scala was the top 4th used programming language used in their company. In fact, senior data scientists used Scala in Apple more in comparison to other positions. 
+
+It was relevant in their senior data science positions.
+
+
+~`Disney Streaming`
+Software Engineer
+![](disney_software.png)
+
+Senior Data Scientist
+![](disney_data.png)
+
+A man, Manpreet Singh, looked at all the job postings for Disney in 2021, and he found the most popular programming languages were: Scala, Python, SQL, R.
+
+Scala was at the top.
+
+https://preettheman.medium.com/these-are-the-programming-languages-disney-uses-70c01cbf06be
+
+~`Twitter`
+
+This company is one of the commonly known companies to use Scala. They were also the earliest to use it, back in 2009. They did use Ruby, another programming language _________,  but Twitter found out that Ruby lacks reliable, high performance code. 
+
+Scala has been beneficial and faster because it is less typing, and leads to less reading.
+
+In fact, Twitter has started series for their programmers to be experienced in Scala 
+
+![](twitter_school_scala.png)
+
+https://www.artima.com/articles/twitter-on-scala
+https://twitter.github.io/scala_school/
+
+~`Morgan Stanley`
+It is a given that the industries that are wanting tech people are banks and financial instituations. Morgan Stanley is at the top of the banks that use Scala.
+
+"Morgan Stanley has one of the world’s largest Scala codebases in production"
+
+https://skillsmatter.com/partners/499-morgan-stanley
+
+~`The Guardian`
+
+We've found that Scala has enabled us to deliver things faster with less code. It's reinvigorated the team. We'll continue to use the right tool for the job whether that be Scala, Python, .NET, PHP or Bash.
+In the last six months, all of the new JVM-based projects have used Scala and none have selected Java.
+
+https://www.infoq.com/articles/guardian_scala/
+
+### What Type of Projects is Scala Known For? 3 I will Focus On in Further Posts ###
+~Big Data Processing, Data Science and Machine Learning, Financial Services
+
+
+
+## Basics of Scala Against Python ##
+
+
+### Simple Expression Example ###
+
+#### Scala #####
+```{scala}
+
+object ScalaLoopExample {
+  def main(args: Array[String]): Unit = {
+    for (i <- 1 to 5) {
+      println(s"Scala loop iteration: $i")
+    }
+  }
+}
+```
+
+args: Array[String] is the method parameter declaration. It's specifying that the main method takes an array of strings as its input.
+
+
+##### Python #####
+
+First Example:
+
+```{python}
+#| eval: false
+
+for i in range(1, 6):
+    print(f"Python loop iteration: {i}")
+```
+
+
+Second:
+```{python}
+def simple_loop():
+    # Function
+    for i in range(1, 6):
+        print(f"Python loop iteration: {i}")
+
+# Call
+simple_loop()
+
+```
+
+In Scala, the for loop is more expressive and can be used for a variety of iteration scenarios, including iterating over collections and applying filters.
+
+In Python, the for loop is straightforward and commonly used for iterating over sequences.
+
+
+
+### Variables Example ###
+
+#### Scala #####
+
+```{Scala}
+object ScalaVariablesExample {
+  def main(args: Array[String]): Unit = {
+    #variable with the keyword var
+    var message: String = "Hi, all!"
+
+    #Print the initial value
+    println(message)
+  }
+}
+
+```
+var is used to declare a mutable variable named message of type String.
+
+#### Python #####
+
+```{Python}
+
+def variable_example():
+    # Defining the variable
+    message = "Hi to all!"
+
+    # Print
+    print(message)
+
+# Calling
+variable_example()
+
+```
+
+### Simple data analytics code  ###
+
+
+#### Scala #####
+
+
+```{Scala}
+     
+      * Calculate the average of all columns
+      val avgDF = df.agg(avg(df.columns.map(col): _*))
+
+      * Show the average values
+      println("\nAverage Values:")
+      avgDF.show()
+
+
+```
+
+
+#### Python #####
+```{Python}
+    # Calculate the average of all columns
+    avg_series = df.mean()
+
+    #printing it
+    print(avg_series)
+
+```
+
+### Concatenating Arrays ###
+
+#### Scala #####
+
+```{Scala}
+object ConcatenateArraysExample {
+  def main(args: Array[String]): Unit = {
+    # Define two arrays
+    val array1 = Array(1, 2, 3)
+    val array2 = Array(4, 5, 6)
+
+    # Concatenate arrays using the ++ operator
+    val concatenatedArray1 = array1 ++ array2
+
+    # Concatenate arrays using the concat method
+    val concatenatedArray2 = array1.concat(array2)
+
+    # Print the results
+    println("Concatenated Array 1: " + concatenatedArray1.mkString(", "))
+    println("Concatenated Array 2: " + concatenatedArray2.mkString(", "))
+  }
+}
+```
+
+#### Python #####
+
+```{python}
+
+def concatenate_arrays(*arrays):
+    # Using the + operator for concatenation
+    concatenated_array = []
+    for arr in arrays:
+        concatenated_array += arr
+
+    return concatenated_array
+
+def main():
+    # Define several arrays
+    array1 = [1, 2, 3]
+    array2 = [4, 5, 6]
+    array3 = ["A", "B", "C"]
+
+    # Concatenate arrays using the custom function
+    concatenated_array = concatenate_arrays(array1, array2, array3)
+
+    # Print the result
+    print("Concatenated Array:", concatenated_array)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+~Key Points of Comparison
