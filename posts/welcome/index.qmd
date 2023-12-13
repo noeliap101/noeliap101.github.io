@@ -8,7 +8,7 @@ date: "2023"
 categories: [news]
 ---
 
-## My Informational First Blog Post Comments here !!! ##
+## My Informational First Blog Post Comments here ##
 
 ![](features_of_scala.png)
 
