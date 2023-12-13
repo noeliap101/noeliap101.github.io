@@ -1,5 +1,5 @@
 ---
-title: "Welcome To My Blog! First"
+title: "Welcome To My Blog! First Post"
 #format:
  # html:
   #  code-fold: true
