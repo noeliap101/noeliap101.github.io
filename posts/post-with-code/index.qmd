@@ -1,12 +1,12 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
-date: "2023-09-18"
-categories: [news, code, analysis]
+title: "My Second Blog Post"
+author: "Noelia Paz"
+date: "2023-12-01"
+categories: [example, example, example]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+## My Second Blog Post ##
 
 ```{r}
 1 + 1
