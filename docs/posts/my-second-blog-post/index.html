@@ -144,42 +144,82 @@ ul.task-list li input[type="checkbox"] {
 <p>The class is the instruction, and the object is the thing you build based on those instructions.</p>
 <p>A recipe (class) to make cookies (Objects).</p>
 <p><img src="cookie.jpeg" class="img-fluid"></p>
-<p>{pic here}</p>
+<p><img src="class1.png" class="img-fluid"></p>
+<p><img src="class2.png" class="img-fluid"></p>
 <p>Let’s go over functional and imperative programming!</p>
 <section id="functional" class="level3">
 <h3 class="anchored" data-anchor-id="functional">Functional:</h3>
 <ul>
-<li>code is written in such a way that existing variables are not modified while the program is running. -Values are specified as function parameters, and output is generated based on their parameters.</li>
+<li>code is written in such a way that existing variables are not modified while the program is running.</li>
+<li>Values are specified as function parameters, and output is generated based on their parameters.</li>
 <li>Functions are required to return the same output when specifying the same parameters on each call.</li>
 </ul>
 </section>
 <section id="imperative" class="level3">
 <h3 class="anchored" data-anchor-id="imperative">Imperative:</h3>
-<dl>
-<dt>~ it’s normal to have mutable variables and classes that keep internal states</dt>
-<dd>
-<p>This can lead to both subtle and hard-to-find bugs, especially where multiple threads try to alter a variable at the same time.</p>
-</dd>
-</dl>
-<p>~Used in Java! [standard POJO has variables that can be freely changed by calling the setter methods]</p>
+<ul>
+<li><p>It’s normal to have mutable variables and classes that keep internal states</p></li>
+<li><p>This can lead to both subtle and hard-to-find bugs, especially where multiple threads try to alter a variable at the same time.</p></li>
+<li><p>Used in Java! [standard POJO has variables that can be freely changed by calling the setter methods]</p></li>
+</ul>
 <p>Now, traditional object oriented programming in Scala!</p>
-<p>~First, define the class</p>
-<p>~Then, add variables</p>
-<p>~Then, add the operations you need to perform.</p>
-<p>~Add the method</p>
-<p>~Then print the output passing arguments to it</p>
-<p>[Add the functional programming pic]</p>
-<p>~To let the add method return different values, different parameters will have to be passed to the add method.</p>
-<p>~Functional programming is a popular choice for programs that use multiple threads.</p>
-<p>~Methods cannot alter the state of data structures that are used in multiple threads, it’s often much more safe than using imperative code.</p>
-<p>~Requires a different mindset from the developer</p>
+<ul>
+<li><p>First, define the class</p></li>
+<li><p>Then, add variables</p></li>
+<li><p>Then, add the operations you need to perform.</p></li>
+<li><p>Add the method</p></li>
+<li><p>Then print the output passing arguments to it</p></li>
+</ul>
+<p><img src="functional.png" class="img-fluid"></p>
+<ul>
+<li><p>To let the add method return different values, different parameters will have to be passed to the add method.</p></li>
+<li><p>Functional programming is a popular choice for programs that use multiple threads.</p></li>
+<li><p>Methods cannot alter the state of data structures that are used in multiple threads, it’s often much more safe than using imperative code.</p></li>
+<li><p>Requires a different mindset from the developer</p></li>
+</ul>
 </section>
 <section id="scala-syntax-and-rules" class="level3">
 <h3 class="anchored" data-anchor-id="scala-syntax-and-rules">Scala Syntax and Rules</h3>
-<p>~ statically typed language, you have to declare variables before you use them.</p>
-
-
+<ul>
+<li>statically typed language, you have to declare variables before you use them.</li>
+</ul>
+<p><img src="syntax1.png" class="img-fluid"></p>
+<ul>
+<li><p>A mutable variable has been declared:</p></li>
+<li><p>It can be used to store instances of the same type or types</p></li>
+<li><p>Or can be upcast to that type</p></li>
+</ul>
+<p><img src="syntax2.png" class="img-fluid"></p>
+<p>Upcasting: moving from child to parent type</p>
+<p>Java.lang.object: common object used in java, and under ‘Any’ type in Scala.</p>
+<p><img src="syntax3.png" class="img-fluid"></p>
+<ul>
+<li>Able to line for variable j. -A string type can be upcast to java.lang.Object</li>
+<li>The j variable will happily store a reference to the hello world string.</li>
+</ul>
+<p>What Cannot Happen - Giving a string type to the i variable from up above - Strings cannot be upcasted to an Int instance</p>
 </section>
+</section>
+<section id="mutuable-and-immutable-variables" class="level2">
+<h2 class="anchored" data-anchor-id="mutuable-and-immutable-variables">Mutuable and Immutable Variables</h2>
+<p>Classes</p>
+<p>Any is Scala’s parent class</p>
+<p><img src="anyclasses.png" class="img-fluid"></p>
+<p>Subclasses</p>
+<p>AnyRef:</p>
+<ul>
+<li><p>used by reverence variable</p></li>
+<li><p>methods; equals, hashcode, finalize</p></li>
+</ul>
+<p>AnyVal:</p>
+<ul>
+<li><p>used by value classes</p></li>
+<li><p>cannpt create primitive values</p></li>
+</ul>
+<p>Primitive values: These wrapper classes are subclasses of the AnyVal class.</p>
+<p>Scala wrapper: subclasses implement all the binary operators that you use for calculations</p>
+
+
 </section>
 
 </main> <!-- /main -->
