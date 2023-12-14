@@ -17,6 +17,7 @@ Why would you want to learn `Scala`?
 Why don't you just continue with the same languages you've been using for all your programming?
 
 The goal of this is to encourage you to consider learning the Scala Programming language
+My audience is targeted towards college students
 
 ### Why Scala For Me ###
 As I have been researching on why Scala would be a beneficial tool for you to use, I have learned that larger companies use this as they have more benefits than others.
