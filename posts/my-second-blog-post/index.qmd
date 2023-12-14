@@ -2,11 +2,70 @@
 title: "My Second Blog Post"
 author: "Noelia Paz"
 date: "2023-12-01"
-categories: [example, example, example]
 image: "image.jpg"
 ---
 
+
 ## My Second Blog Post ##
+
+Let’s learn about class and object! Did you know that Scala focuses on object oriented programming? It is unique to its language, and that’s what it focuses on:
+
+The class is the instruction, and the object is the thing you build based on those instructions.
+
+A recipe (class) to make cookies (Objects).
+
 
 ![](cookie.jpeg)
 
+{pic here}
+
+
+Let’s go over functional and imperative programming! 
+
+### Functional:
+- code is written in such a way that existing variables are not modified while the program is running. 
+-Values are specified as function parameters, and output is generated based on their parameters.
+- Functions are required to return the same output when specifying the same parameters on each call. 
+
+
+### Imperative:
+~ it's normal to have mutable variables and classes that keep internal states
+
+~ This can lead to both subtle and hard-to-find bugs, especially where multiple threads try to alter a variable at the same time.
+
+~Used in Java! [standard POJO has variables that can be freely changed by calling the setter methods]
+
+
+
+Now, traditional object oriented programming in Scala!
+
+~First, define the class
+
+~Then, add variables
+
+~Then, add the operations you need to perform.
+
+~Add the method
+
+~Then print the output passing arguments to it
+
+
+
+[Add the functional programming pic] 
+
+
+
+
+~To let the add method return different values, different parameters will have to be passed to the add method. 
+
+~Functional programming is a popular choice for programs that use multiple threads. 
+
+~Methods cannot alter the state of data structures that are used in multiple threads, it's often much more safe than using imperative code.
+
+~Requires a different mindset from the developer
+
+
+
+
+### Scala Syntax and Rules
+~ statically typed language, you have to declare variables before you use them.
