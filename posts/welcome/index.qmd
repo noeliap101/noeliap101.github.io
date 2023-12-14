@@ -8,8 +8,6 @@ date: "2023"
 categories: [news]
 ---
 
-## My Informational First Blog Post
-
 ![](features_of_scala.png)
 
 Why would you want to learn `Scala`?
